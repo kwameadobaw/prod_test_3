@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<link rel="stylesheet" href="{% static 'Api/signup.css' %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home4Rent Sign Up</title>
+  <!-- <link rel="stylesheet" href="styles/signup.css">  </head> -->
+<body>
+  <div class="signup">
+    <h2>Sign Up</h2>
+    <form method="post">
+      {% csrf_token %}
+  {{ form }}
+  <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
